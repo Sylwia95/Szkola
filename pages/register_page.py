@@ -38,14 +38,14 @@ class RegisterPage(BasePage):
         Enter Last Name
 
         """
-        self.driver.find_element(*Locators.LastName).send_keys(lastname)
+        self.driver.find_element(*Locators.LAST_NAME).send_keys(lastname)
 
     def enter_address(self, address):
         """
         Enter Address
 
         """
-        self.driver.find_element(*Locators.Address).send_keys(address)
+        self.driver.find_element(*Locators.ADDRESS).send_keys(address)
 
     def enter_city(self, city):
         """

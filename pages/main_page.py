@@ -6,13 +6,13 @@ class Locators:
     """
     First Page Locators
     """
-    REGISTER_BUTTON = (By.ID, "Register")
+    REGISTER_BUTTON = (By.LINK_TEXT, "Register")
 
 class MainPage(BasePage):
     """
     First Page Object
     """
     def  click_register_button(self):
-        self.driver.find_element(*LOCATORS.REGISTER_BUTTON).click()
+        self.driver.find_element(*Locators.REGISTER_BUTTON).click()
         return RegisterPage(self.driver)
 

@@ -8,7 +8,6 @@ class RegistrationDataGenerator:
         self.last_name = self.fake.last_name()
         self.address = self.fake.street_address()
         self.city = self.fake.city()
-        self.state = self.fake.state()
         self.zip_code = self.fake.postcode()
         self.phone = self.fake.phone_number()
         self.pesel = self.fake.ssn()
